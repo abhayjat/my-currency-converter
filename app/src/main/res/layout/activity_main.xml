@@ -17,26 +17,35 @@
         android:layout_marginBottom="350dp"
         app:srcCompat="@drawable/cashy" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/textview"-->
-<!--        style="@android:style/Widget.DeviceDefault.Light.TextView"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_above="@+id/editTextNumberDecimal"-->
-<!--        android:layout_below="@+id/cash"-->
-<!--        android:layout_marginTop="-381dp"-->
-<!--        android:layout_marginBottom="350dp"-->
-<!--        android:text="Enter the amount in Doller"-->
-<!--        android:textSize="20sp" />-->
+    <TextView
+        android:id="@+id/textview"
+        style="@android:style/Widget.DeviceDefault.Light.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dollerfiled"
+        android:layout_below="@+id/cash"
+        android:layout_marginTop="-381dp"
+        android:layout_marginBottom="350dp"
+        android:text="Enter the amount in Doller"
+        android:textSize="20sp" />
 
-<!--    <EditText-->
-<!--        android:id="@+id/editTextNumberDecimal"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/cash"-->
-<!--        android:layout_marginTop="-300dp"-->
-<!--        android:ems="10"-->
-<!--        android:inputType="numberDecimal" />-->
+    <EditText
+        android:id="@+id/dollerfiled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cash"
+        android:layout_marginTop="-300dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dollerfiled"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:text="CONVERT"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
 
 </RelativeLayout>
