@@ -3,6 +3,7 @@ package com.example.my_corrency_converter;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter adfrom=new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,from);
         sp1.setAdapter(adfrom);
 
-        String[] to={"Indian Rupee","Bitcoin","Pakistani Rupee","Chinese Yuan","USD"};
+        String[] to={"Indian Rupee","Bitcoin","Chinese Yuan","Pakistani Rupee","USD"};
         ArrayAdapter adto=new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,to);
         sp2.setAdapter(adto);
 
@@ -42,11 +43,10 @@ public class MainActivity extends AppCompatActivity {
 
                 Double amount=Double.parseDouble(ed.getText().toString());
 
-                String s=Double.toString(amount);
 
-                if (amount==null){
-                    Toast toast=Toast.makeText(getApplicationContext(),"Enter Amount",Toast.LENGTH_SHORT);
-                    toast.show();
+                if (ed.getText().toString()== null || TextUtils.isEmpty(ed.getText().toString())){
+                        Toast toast=Toast.makeText(getApplicationContext(),"Enter Amount",Toast.LENGTH_SHORT);
+                        toast.show();
                 }
 
                 if(sp1.getSelectedItem().toString() == "USD" && sp2.getSelectedItem().toString()=="Indian Rupee"){
