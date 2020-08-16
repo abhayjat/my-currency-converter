@@ -13,8 +13,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="-30dp"
-        android:layout_marginBottom="400dp"
-        app:srcCompat="@drawable/cashy" />
+        android:layout_marginBottom="430dp"
+        app:srcCompat="@drawable/ca" />
 
     <TextView
         android:id="@+id/textview"
@@ -34,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/cash"
-        android:layout_marginTop="-425dp"
+        android:layout_marginTop="-430dp"
         android:ems="10"
         android:inputType="numberDecimal" />
 
@@ -43,9 +43,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/txtamount"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
         android:text="From"
+        android:textColor="#00f"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -54,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/txtamount"
         android:layout_toRightOf="@id/from"
-        android:layout_marginTop="-15dp"
+        android:layout_marginTop="5dp"
         android:layout_marginLeft="20dp"
         style="@android:style/Widget.Holo.Light.Spinner"
         android:minWidth="30sp"
@@ -65,30 +66,33 @@
         android:id="@+id/to"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/from"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="30dp"
+        android:layout_below="@id/txtamount"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/fromspinner"
+        android:layout_marginTop="40dp"
         android:text="To"
+        android:textColor="#00f"
         android:textSize="20sp"
         android:textStyle="bold" />
 
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/fromspinner"
+        android:layout_below="@id/txtamount"
         android:layout_toRightOf="@id/to"
         style="@android:style/Widget.Holo.Light.Spinner"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="-5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/tospinner"
         android:minWidth="30sp" />
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtamount"
         android:layout_centerInParent="true"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="170dp"
         android:text="CONVERT"
         android:background="@drawable/convert"
         android:textStyle="bold"
